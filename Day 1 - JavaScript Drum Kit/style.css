@@ -1,0 +1,40 @@
+body {
+	background-image: url(background.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.child {
+	margin: 1rem;
+	padding: 1rem 0.5rem;
+	border: 3px solid black;
+	min-height: 50px;
+	min-width: 50px;
+	text-align: center;
+	border-radius: 0.5rem;
+	transition: all 0.1s;
+}
+
+span {
+	display: block;
+	color: #ffc600;
+	text-transform: uppercase;
+}
+
+kbd {
+	color: white;
+	font-size: 1.7rem;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.press {
+	border-color: #ffc600;
+	transform: scale(1.1);
+}
