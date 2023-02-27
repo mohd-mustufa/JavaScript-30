@@ -1,0 +1,29 @@
+:root {
+	--spacing: 10px;
+	--blur: 0px;
+	--base-color: #000;
+	--bg-color: #fff;
+}
+
+body {
+	margin: 2rem;
+	background-color: var(--bg-color);
+}
+
+.controls {
+	margin: 2rem;
+}
+
+input {
+	margin: 0.5rem;
+}
+
+span {
+	color: var(--base-color);
+}
+
+img {
+	background-color: var(--base-color);
+	padding: var(--spacing);
+	filter: blur(var(--blur));
+}

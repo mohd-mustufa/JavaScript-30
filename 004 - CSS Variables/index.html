@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Variables</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<h1>Update CSS Variables with <span>JS</span></h1>
+		<div class="controls">
+			<label for="spacing">Spacing: </label>
+			<input
+				type="range"
+				id="spacing"
+				min="10"
+				max="100"
+				name="spacing"
+				value="10"
+				data-size="px"
+			/>
+
+			<label for="blur">Blur: </label>
+			<input
+				type="range"
+				id="blur"
+				min="0"
+				max="15"
+				name="blur"
+				value="0"
+				data-size="px"
+			/>
+
+			<br />
+
+			<label for="base-color">Base Color: </label>
+			<input type="color" id="base-color" name="base-color" value="#000000" />
+
+			<label for="bg-color">Background Color: </label>
+			<input type="color" id="bg-color" name="bg-color" value="#ffffff" />
+		</div>
+
+		<img
+			src="images/chess.jpg"
+			alt="No image found"
+			height="500px"
+			width="580px"
+		/>
+	</body>
+</html>
