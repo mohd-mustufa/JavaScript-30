@@ -1,0 +1,91 @@
+html {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.panels {
+	min-height: 100vh;
+	display: flex;
+	overflow: hidden;
+}
+
+.panel {
+	background-color: gray;
+	background-size: cover;
+	background-position: center;
+	font-size: 20px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+		flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+}
+
+.panel > * {
+	margin: 0;
+	width: 100%;
+	flex: 1 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: transform 0.5s;
+}
+
+.panel p {
+	font-family: "Amatic SC", cursive;
+	text-transform: uppercase;
+	text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+	color: white;
+	font-weight: 200;
+	font-size: 2em;
+}
+
+.panel p:nth-child(2) {
+	font-size: 4em;
+}
+
+.panel1 {
+	background-image: url(images/panel1.jpg);
+}
+
+.panel2 {
+	background-image: url(images/panel2.jpg);
+}
+
+.panel3 {
+	background-image: url(images/panel3.jpg);
+}
+
+.panel4 {
+	background-image: url(images/panel4.jpg);
+}
+
+.panel5 {
+	background-image: url(images/panel5.jpg);
+}
+
+.panel > *:first-child {
+	transform: translateY(-100%);
+}
+
+.panel.open-text > *:first-child {
+	transform: translateY(0);
+}
+
+.panel > *:last-child {
+	transform: translateY(100%);
+}
+
+.panel.open-text > *:last-child {
+	transform: translateY(0);
+}
+
+.panel.open {
+	flex: 5;
+	font-size: 40px;
+}
